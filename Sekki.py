@@ -8,8 +8,9 @@ import random
 import pyautogui #programitically controls mouse and keyboard
 import numpy as np
 import cv2 # also need to install pip install Pillow --upgrade  #for screenshot
-
-
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys #provide access to keyboard keys
+import time
 
 engine = pyttsx3.init('sapi5')
 def speak(audio):
@@ -144,6 +145,100 @@ if __name__ == "__main__":
             speak("and the TIME is,")
             speak(tym)
 
+        elif 'stop' in query:
+            break
+
+        #----------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        #SELENIUN
+        
+        elif 'assignment' in query:
+            driver = webdriver.Chrome(executable_path="D:\\VS F\\Python\\Sekki\\drivers\\chromedriver.exe")
+            driver.get("https://edu.google.com/intl/en_in/products/classroom/?gclid=CjwKCAjw2ZaGBhBoEiwA8pfP_jaN4keRSzKCLk9grHBMXJkpu9TvuiXVQspHpvE5BTjktbMLEcdj2BoCankQAvD_BwE&gclsrc=aw.dsADBUDIIIP-O89'P[")
+            driver.find_element_by_xpath('//*[@id="gfe-main-content"]/section[1]/div/div/div/ul/li[2]/a/span').click()
+            file1=open("C:\\Users\\Hp\\OneDrive\\Documents\\myfile.txt","r")
+            sam=file1.readlines()
+            login=driver.find_element_by_xpath('//*[@id="view_container"]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]')
+            login.clear()
+            login.send_keys(sam+Keys.ENTER)
+            
+            
 
 
-    
+        #----------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        #GAMES
+        elif 'game' in query:
+            speak('Which Game do u want to play mistress?')
+            print('1. Rock ,Paper, sissor \n',"2.")
+            
+            speak('say 1 for Rock,Paper,Sissor')
+
+            
+        #-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+        #CALCULATOR
+        elif 'calculate' or 'calculator' in query:
+
+
+            print("Say the number to be calculated \n","eg: \n","6 Plus 5 \n","7 Minus 9 \n", "5 Multiplied by 3 \n","8 Divided by 4 \n")
+            print("say 'Stop' to exit")
+            speak('Say the number to be calculated')
+            speak("FOR EXAMPLE : 6 Plus 5")
+            sum=0
+
+            while True:
+                print("say the numbers........")
+                
+                calc=commands().lower()
+                x=[]
+                x=calc.split() # we are dividing the voice input into 3 parts...2 oprands and a operator
+                print(x)
+                if calc == "stop":
+                    break
+                else:
+                    if x[1]=='+':
+                        x[0]=int(x[0])
+                        x[2]=int(x[2])
+                        y=x[0]+x[2]
+                        sum=y
+                        print("Answer :",y)
+                        speak(" the answer is")
+                        speak(y)
+                    elif x[1]== 'x' :
+                        x[0]=int(x[0])
+                        x[2]=int(x[2])
+                        y=x[0] * x[2]
+                        sum=y
+                        print("Answer :",y)
+                        speak(" the answer is")
+                        speak(y)
+                    elif x[1]=='/':
+                        x[0]=int(x[0])
+                        x[2]=int(x[2])
+                        y=x[0]/[2]
+                        sum=y
+                        print("Answer :",y)
+                        speak(" the answer is")
+                        speak(y)
+                    elif x[1]=='-':
+                        x[0]=int(x[0])
+                        x[2]=int(x[2])
+                        y=x[0]-x[2]
+                        sum=y
+                        print("Answer :",y)
+                        speak(" the answer is")
+                        speak(y)
+                    else:
+                        speak("Sorry Mistress i didn't get it please try again!")
+                
+    #-----------------------------------------------------------------------------------------------------------------------------------
+            
+                    
+
+
+
+
+
+   

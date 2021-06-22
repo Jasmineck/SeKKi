@@ -179,6 +179,8 @@ if __name__ == "__main__":
 
 
         #CALCULATOR
+
+        
         elif 'calculate' or 'calculator' in query:
 
 

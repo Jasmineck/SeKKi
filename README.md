@@ -104,7 +104,7 @@ original project:[To-do-list](https://github.com/RedocamaI/To-do-List)
 1. Commands may sometimes be difficult for sekki to understand.
 2. Sekki is personalised for the owner so the collaborators have to edit the source code to fully utilize seKKi.
 3. Assignment and To-do list functions does not work as expected.
-![Screenshot](screenshot.png)
+![Screenshot](image1.png)
 The owner is facing trouble during logins in web automation.
 
 

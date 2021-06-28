@@ -47,3 +47,5 @@ Since we know  Apple and Google have large installed bases of users on smartphon
 
 ## Installation:
 
+Use pip to install the all the packages and modules mentioned in ['Features'](). Python 3 has pip available in the standard library. Using pip, you can install selenium like this:
+

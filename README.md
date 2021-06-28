@@ -66,6 +66,32 @@ For Selenium webdriver intsallation and documentation refer to [Selenium with Py
 
 ## How to use seKKi :
 
+clone the project after you are done with installation and run in terminal.
+SeKKi uses basic speech commands which are user firiendly but make sure the commands have these keywords.
+
+| COMMANDS | FUNCTIONS |
+| --- | --- |
+| wikipedia | To search on wikipedia |
+| launch | to launch any website |
+| search | to search on google or you tube | 
+| songs* | to play a random song from library |
+| code* | to launch vs code |
+| minecraft* | to launch minecraft |
+| blender* | to launch blender 3D |
+| discord* | to launch discord |
+| screenshot | to take a screenshot |
+| time | to get update on day , date and time |
+| assignment$ | to sumbit assignment in google classroom |
+| to do list$ | to launch to do list |
+| games | to play games with sekki |
+| calculate | to perform simple mathematical operations |
+| stop | to exit |
+
+
+**NOTE**-
+'*' = since sekki is a personalised assistant the soure code contains location of those application from the owner's device
+'$' = the owner is still working on these sections due to some unknown error
+
 
 
 

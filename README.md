@@ -30,13 +30,13 @@ Since we know  Apple and Google have large installed bases of users on smartphon
 |  MODULES  |  USES  |         
 |  ----  |  ---  |        
 |  pyttsx3   |  Text-to-speech conversion  |
-|  speech_recognition  |  speech -to-text conversion |
-|  datetime  |  supplies classes for manipulating dates and times  |
-|  wikipedia  |   it makes easy to access and parse data from Wikipedia   
-|  webbrowser  |  provides a high-level interface to allow displaying Web-based documents to users  |
-|  random  | used to generate random data  |
-|  pyautogui  |  programitically controls mouse and keyboard  |
-|  numpy  |   used for working with arrays  |
+|  speech_recognition  |  Speech -to-text conversion |
+|  datetime  |  Supplies classes for manipulating dates and times  |
+|  wikipedia  |   It makes easy to access and parse data from Wikipedia   
+|  webbrowser  |  Provides a high-level interface to allow displaying Web-based documents to users  |
+|  random  | Used to generate random data  |
+|  pyautogui  |  Programitically controls mouse and keyboard  |
+|  numpy  |   Used for working with arrays  |
 
 
 * **Selenium** - for web automation

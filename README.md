@@ -90,7 +90,7 @@ SeKKi uses basic speech commands which are user firiendly but make sure the comm
 
 **NOTE**-
 
-"*" = since sekki is a personalised assistant the soure code contains location of those application from the owner's device
+"*" = since sekki is a personalised assistant the soure code contains location of those application from the owner's device so it may not be accessable to contributers.
 
 '$' = the owner is still working on these sections due to some unknown error
 

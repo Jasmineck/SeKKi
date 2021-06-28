@@ -69,7 +69,7 @@ For Selenium webdriver intsallation and documentation refer to [Selenium with Py
 Clone the project after you are done with installation and run in terminal.
 SeKKi uses basic speech commands which are user firiendly but make sure the commands have these keywords.
 
-| COMMANDS | FUNCTIONS |
+| KEYWORDS | FUNCTIONS |
 | --- | --- |
 | wikipedia | To search on wikipedia |
 | launch | to launch any website |

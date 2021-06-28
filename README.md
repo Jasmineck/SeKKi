@@ -22,3 +22,20 @@ Since we know  Apple and Google have large installed bases of users on smartphon
  * voice operated To-Do list
  * sekki has an automated system which can sumbit your assignment on demand
  * and many more features to be added...
+ 
+## Technologies used:
+* Python- The entire source code is written in python.
+* Python modules used:
+|  MODULES  |          USES        |         
+|---------|----------------------|        
+|  pyttsx3   |  Text-to-speech conversion  |
+|  speech_recognition  |  speech -to-text conversion |
+|  datetime      |    supplies classes for manipulating dates and times  |
+|  wikipedia       |   it makes easy to access and parse data from Wikipedia   |
+|  webbrowser |  provides a high-level interface to allow displaying Web-based documents to users  |
+|  random  | used to generate random data  |
+|  pyautogui  |  programitically controls mouse and keyboard  |
+|  numpy  |   used for working with arrays  |
+* Selenium - for web automation
+* webdiver module in selenum for webdriver implimentation
+

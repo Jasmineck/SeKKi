@@ -52,7 +52,7 @@ Use pip to install the all the packages and modules mentioned in [Technologies u
 |  pip install pyttsx3         |
 |------------------------------|
 
-*NOTE: If pip install module is throwing error try this-*
+*NOTE: If pip install module is throwing  an error then try this-*
 
 |  pip install pipwin       |
 | -------------------------  |

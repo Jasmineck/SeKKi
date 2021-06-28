@@ -156,13 +156,28 @@ if __name__ == "__main__":
             driver = webdriver.Chrome(executable_path="D:\\VS F\\Python\\Sekki\\drivers\\chromedriver.exe")
             driver.get("https://edu.google.com/intl/en_in/products/classroom/?gclid=CjwKCAjw2ZaGBhBoEiwA8pfP_jaN4keRSzKCLk9grHBMXJkpu9TvuiXVQspHpvE5BTjktbMLEcdj2BoCankQAvD_BwE&gclsrc=aw.dsADBUDIIIP-O89'P[")
             driver.find_element_by_xpath('//*[@id="gfe-main-content"]/section[1]/div/div/div/ul/li[2]/a/span').click()
-            file1=open("C:\\Users\\Hp\\OneDrive\\Documents\\myfile.txt","r")
-            sam=file1.readlines()
-            login=driver.find_element_by_xpath('//*[@id="view_container"]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]')
-            login.clear()
-            login.send_keys(sam+Keys.ENTER)
+            time.sleep(10)
+
             
             
+        #-----------------------------------------------------------------------------------------------------------------------------------------------------    
+        
+        #To-Do List [SELENIUM]
+
+        elif 'to do' in query:
+            driver = webdriver.Chrome(executable_path="D:\\VS F\\Python\\Sekki\\drivers\\chromedriver.exe")
+            driver.get("https://redocamai.github.io/To-do-List/")
+            title=driver.find_element_by_xpath('/html/body/div[2]/div[2]/form/div/div[1]/input')
+            speak('Add title for task Mistress!')
+            title_input=commands()
+            title.send_keys(title_input)
+            time.sleep(20)
+
+
+
+
+
+        
 
 
         #----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -172,7 +187,67 @@ if __name__ == "__main__":
             speak('Which Game do u want to play mistress?')
             print('1. Rock ,Paper, sissor \n',"2.")
             
-            speak('say 1 for Rock,Paper,Sissor')
+            #speak('say 1 for Rock,Paper,Sissor')
+
+
+
+        #ROCK / PAPER / SISSOR
+            speak('...')
+            speak(' Rock, Paper, Sissor game loading....')
+            speak('Say your choice mistress')
+            speak(' Rock, Paper OR Sissor')
+            choices=['rock','paper','sissor']
+            comp=random.choice(choices)
+            while True:
+                print('Listining.....')
+                user=commands().lower()
+                if user=='stop':
+                    speak('Thanks for playing with me mistress')
+                    break
+                if user=='rock':
+                    user='rock'
+                elif user=='paper':
+                    user= 'paper'
+                else:
+                    user='sissor'   #since sekki can't detect certin words properly we had to use if else to assign valid values
+                
+                print('User choose : ',user)
+                speak('user choosed :')
+                speak(user)
+
+                print('seKKi choose : ',comp)
+                speak('I choose :')
+                speak(comp)
+
+                if comp==user:
+                    print('DRAW!')
+                    speak('The match is draw!')
+                elif user=='rock':
+                    if comp== 'paper':
+                        print('YOU LOSE!!')
+                        speak('Sorry mistress you lost this round')
+                    else:
+                        print('YOU WIN!!!')
+                        speak('Congrats mistress... YOU WON!')
+                elif user=='paper':
+                    if comp== 'sissor':
+                        print('YOU LOSE!!')
+                        speak('Sorry mistress you lost this round')
+                    else:
+                        print('YOU WIN!!!')
+                        speak('Congrats mistress... YOU WON!')
+                else:
+                    
+                    if comp== 'rock':
+                        print('YOU LOSE!!')
+                        speak('Sorry mistress you lost this round')
+                    else:
+                        print('YOU WIN!!!')
+                        speak('Congrats mistress... YOU WON!')
+
+
+            
+
 
             
         #-----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -180,8 +255,8 @@ if __name__ == "__main__":
 
         #CALCULATOR
 
-        
-        elif 'calculate' or 'calculator' in query:
+
+        elif 'calculate' in query:
 
 
             print("Say the number to be calculated \n","eg: \n","6 Plus 5 \n","7 Minus 9 \n", "5 Multiplied by 3 \n","8 Divided by 4 \n")
@@ -242,5 +317,3 @@ if __name__ == "__main__":
 
 
 
-
-   

@@ -94,7 +94,9 @@ SeKKi uses basic speech commands which are user firiendly but make sure the comm
 
 '$' = the owner is still working on these sections due to some unknown error
 
+## Credits :
 
+To-do-list from
 
 
 

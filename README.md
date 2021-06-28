@@ -55,7 +55,10 @@ Use pip to install the all the packages and modules mentioned in [Technologies u
 *NOTE: If pip install module is throwing error try this-*
 
 |  pip install pipwin       |
-|   |
+| -------------------------  |
+
+then
+
 |  pipwin install pyttsx3  |
 |------------------------------|
 

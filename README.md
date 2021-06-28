@@ -66,7 +66,7 @@ For Selenium webdriver intsallation and documentation refer to [Selenium with Py
 
 ## How to use seKKi :
 
-clone the project after you are done with installation and run in terminal.
+Clone the project after you are done with installation and run in terminal.
 SeKKi uses basic speech commands which are user firiendly but make sure the commands have these keywords.
 
 | COMMANDS | FUNCTIONS |
@@ -88,7 +88,7 @@ SeKKi uses basic speech commands which are user firiendly but make sure the comm
 | stop | to exit |
 
 
-**NOTE**-
+**NOTE**
 
 "*" = since sekki is a personalised assistant the soure code contains location of those application from the owner's device so it may not be accessable to contributers.
 
@@ -96,7 +96,17 @@ SeKKi uses basic speech commands which are user firiendly but make sure the comm
 
 ## Credits :
 
-To-do-list from
+To-do-list in collaboration with [suraj](https://github.com/RedocamaI)
+original project:[To-do-list](https://github.com/RedocamaI/To-do-List)
+
+## Issues with Sekki :
+
+1. Commands may sometimes be difficult for sekki to understand.
+2. Sekki is personalised for the owner so the collaborators have to edit the source code to fully utilize seKKi.
+3. Assignment and To-do list functions does not work as expected.
+![Screenshot](screenshot.png)
+The owner is facing trouble during logins in web automation.
+
 
 
 

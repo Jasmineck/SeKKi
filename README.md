@@ -24,7 +24,7 @@ Since we know  Apple and Google have large installed bases of users on smartphon
  * and many more features to be added...
  
 ## Technologies used:
-* Python- The entire source code is written in python.
+* **Python**- The entire source code is written in python.
 * Python modules used:
 
 |  MODULES  |  USES  |         
@@ -39,6 +39,6 @@ Since we know  Apple and Google have large installed bases of users on smartphon
 |  numpy  |   used for working with arrays  |
 
 
-* Selenium - for web automation
-* webdiver module in selenum for webdriver implimentation
+* **Selenium** - for web automation
+* webdiver module in selenium for webdriver implimentation
 

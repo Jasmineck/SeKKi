@@ -47,8 +47,15 @@ Since we know  Apple and Google have large installed bases of users on smartphon
 
 ## Installation:
 
-Use pip to install the all the packages and modules mentioned in [Technologies used](). Python 3 has pip available in the standard library. Using pip, you can install packages like this:
+Use pip to install the all the packages and modules mentioned in [Technologies used](https://github.com/Jasmineck/SeKKi/blob/main/README.md#technologies-used). Python 3 has pip available in the standard library. Using pip, you can install packages like this:
 
 |  pip install pyttsx3         |
 |------------------------------|
+
+*NOTE: If pip install module is throwing error try this-
+|  pip install pipwin       |
+|------------------------------|
+|  pipwin install pyttsx3         |
+|------------------------------|
+
 

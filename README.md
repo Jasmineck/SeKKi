@@ -86,7 +86,7 @@ SeKKi uses basic speech commands which are user firiendly but make sure the comm
 | screenshot | to take a screenshot |
 | time | to get update on day , date and time |
 | assignment$ | to sumbit assignment in google classroom |
-| to do list$ | to launch to do list |
+| to do list  | to launch to do list and give voice inputs |
 | games | to play games with sekki |
 | calculate | to perform simple mathematical operations |
 | stop | to exit |
@@ -107,10 +107,13 @@ original project:[To-do-list](https://github.com/RedocamaI/To-do-List)
 
 1. Commands may sometimes be difficult for sekki to understand.
 2. Sekki is personalised for the owner so the collaborators have to edit the source code to fully utilize seKKi.
-3. Assignment and To-do list functions does not work as expected.
+3. Assignment(main purpose was to sumbit a pdf containing assignment directly to its google classroom) functions does not work as expected.
 [Screenshot](https://github.com/Jasmineck/SeKKi/blob/master/image1.png)
 The owner is facing trouble during logins in web automation.
 
+## Expected Updates:
 
+1. SeKKi Act II containing more web automation features and issues in Act I to be resolved.
+2. seKKi Act III looking forward to include a personalised GUI for Sekki.
 
 

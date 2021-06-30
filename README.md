@@ -37,10 +37,12 @@ Since we know  Apple and Google have large installed bases of users on smartphon
 |  random  | Used to generate random data  |
 |  pyautogui  |  Programitically controls mouse and keyboard  |
 |  numpy  |   Used for working with arrays  |
+|  os  |  it functions is to work with disctionaries  |
 
 
 * **Selenium** - for web automation
-* webdiver module in selenium for webdriver implimentation
+* webdiver module in selenium for webdriver implimentation\
+* **SAPI5**-Microsoft speech API for voice recognisartion and synthesis provided by microsoft.
 
 
 # Let's Get started!

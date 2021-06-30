@@ -5,6 +5,7 @@ SeKKi is a personalized voice -operated Desktop Assistant. He excel in various f
 | [video](https://youtu.be/69eLyUS_2HQ) |
 |---------------------------------------|
 
+
 ## Why would you need seKKi?
 SeKKi is an intelligent virtual assistant (IVA) or intelligent personal assistant (IPA) is a software agent that can perform tasks or services for an individual based on commands or questions. Some virtual assistants are able to interpret human speech and respond via synthesized voices. Users can ask their assistants questions, control home automation devices and media playback via voice, and manage other basic tasks such as email, to-do lists, and calendars with verbal (spoken?) commands. A similar concept, however with differences, lays under the dialogue systems.The capabilities and usage of virtual assistants are expanding rapidly, with new products entering the market and a strong emphasis on both email and voice user interfaces.
 

@@ -21,12 +21,12 @@ def speak(audio):
 def greetings():
     print("Sekkei  ACT 1 Loading....")
     speak("Sekkei,  ACT 1,. Loading!....")
-    print(" Installing Data.........")
-    speak(" Installing data!.........")
+    print("Installing Data.........")
+    speak("Installing data!.........")
     speak(".......")
-    print(" Preparation Complete!")
-    speak(" preparation complete!.")
-    speak(" Launching A I ")
+    print("Preparation Complete!")
+    speak("preparation complete!.")
+    speak("Launching A I ")
 
     hrs = datetime.datetime.now().hour #returns current time in 24-hrs format
     
@@ -36,6 +36,8 @@ def greetings():
         speak("Good Afternoon Mistress")
     else:
         speak("Good Evening Mistress")
+    time.sleep(2)
+    speak("How may i help you mistress?")
     
 def commands():
     #takes voice input and convert it into string
@@ -60,25 +62,19 @@ if __name__ == "__main__":
     greetings()
     while True:
         query=commands().lower()
-        if 'wikipedia' in query:
-            speak("Searching wikipedia.....")
-            query=query.replace("wikipedia","")
-            result= wikipedia.summary(query, sentences=2)
-            speak( "A ccording to wikipedia....")
-            print(result)
-            speak(result)
-        elif 'launch youtube' in query:
+        
+        if 'launch youtube' in query:
             webbrowser.open('youtube.com')
         elif 'launch google' in query:
             webbrowser.open('google.com')
         elif 'launch codechef' in query:
             webbrowser.open('codechef.com')
-        elif 'launch' in query:
-            speak('please tell me the name of website to be launched')
-            query=query.replace('launch','')
-            web='https://www,'+ query + '.com'
-            webbrowser.open(web)
-            speak('is this what u asked for Mistress?')
+        #elif 'launch' in query:
+            #speak('please tell me the name of website to be launched')
+            #query=query.replace('launch','')
+            #web='https://www,'+ query + '.com'
+            #webbrowser.open(web)
+            #speak('is this what u asked for Mistress?')
 
         
         #-------------------------------------------------------------------------------------------------
@@ -97,6 +93,13 @@ if __name__ == "__main__":
                 query=query.replace('on','')
                 web='https://www.youtube.com/results?search_query='+query
                 webbrowser.open(web)
+            elif 'wikipedia' in query:
+                speak("Searching wikipedia.....")
+                query=query.replace("wikipedia","")
+                result= wikipedia.summary(query, sentences=2)
+                speak( "A ccording to wikipedia....")
+                print(result)
+                speak(result)
             else :continue
         #----------------------------------------------------------------------------------------------------
         elif 'song' in query:
@@ -130,6 +133,8 @@ if __name__ == "__main__":
             image = pyautogui.screenshot()
             image = cv2.cvtColor(np.array(image),cv2.COLOR_RGB2BGR)
             cv2.imwrite("image1.png", image)
+            speak('the screenshot is taken mistress')
+            time.sleep(2)
 
             
 
@@ -170,7 +175,19 @@ if __name__ == "__main__":
             speak('Add title for task Mistress!')
             title_input=commands()
             title.send_keys(title_input)
-            time.sleep(20)
+            descp=driver.find_element_by_xpath('/html/body/div[2]/div[2]/form/div/textarea')
+            speak('Add Discription for the task Mistress!')
+            descp_input=commands()
+            descp.send_keys(descp_input)
+            speak('plese select the due date mistress')
+            time.sleep(15)
+            speak('Are you done Mistress? should i add this to the list')
+            time.sleep(2)
+            driver.find_element_by_xpath('/html/body/div[2]/div[2]/form/div/div[1]/button').click()
+            speak(title_input)
+            speak('added to To Do list')
+            
+
 
 
 
@@ -315,5 +332,24 @@ if __name__ == "__main__":
             break           
 
 
+    #-------------------------------------------------------------------------------------------------------------------------------------
+        elif 'introduce' in query:
+            speak('Hello everyone! I am Sekkei. I am a personalised voice operated Desktop assistant')
+            speak(" Sekkei can interpret human speech and respond via synthesized voices")
+            speak("I can perform tasks based on my mistress's commands.")
+            speak("you can ask Sekkei questions, control home automation devices,play games and media playback via voice, and manage other basic tasks such as email, to-do lists, and calendars with verbal commands")
+            speak("To know Sekkei in a better way you can ask for Help in commands. Also do check out Sekki's source code on Git Hub to understand how i work")
+            webbrowser.open('https://github.com/Jasmineck/SeKKi')
+            speak('This Kawaei git Hub page is my home UwU')
+           
+            speak('Hope you like spending tyme with sekkei. Aahhh Kemochee!')
+            speak('My mistress is GOD!')
 
+   #---------------------------------------------------------------------------------------------------------------------------------------
 
+        elif 'help' in query:
+            speak("Here are Sekkei's Basic commands")
+            webbrowser.open("https://github.com/Jasmineck/SeKKi#how-to-use-sekki-")
+            time.sleep(15)
+
+    #---------------------------------------------------------------------------------------------------------------------------------------

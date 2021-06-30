@@ -73,7 +73,7 @@ SeKKi uses basic speech commands which are user firiendly but make sure the comm
 | --- | --- |
 | help | to know various commands |
 | introduce | to know more about sekki |
-| wikipedia | To search on wikipedia |
+| wikipedia | to search on wikipedia |
 | launch | to launch any website |
 | search | to search on google or you tube | 
 | songs* | to play a random song from library |
